@@ -34,7 +34,7 @@ class LoginFB extends Component {
                 // this.props.history.push('/')
                 console.log('something just like this')
                 window.alert("Bạn Đã Đăng Nhập Thành Công")
-                this.props.history.push('https://www.vinabook.com');
+               // this.props.history.push('https://www.vinabook.com');
             }
             )
             .catch(err => console.log(err))
@@ -63,9 +63,9 @@ class LoginFB extends Component {
                             </Form>
                             <div style={{ marginTop: "55px" }}>
 
-                                
+                                    <a href={'https://www.vinabook.com'}>
                                     <Button style={{ backgroundColor: "#4267b2", borderColor: "#4267b2", borderRadius: "0px" }} onClick={this._handleInfo} className="btn-login" > Đăng Nhập </Button>
-                                
+                                </a>
                                 <div className="select-or">
                                     <span> hoặc </span>
                                 </div>

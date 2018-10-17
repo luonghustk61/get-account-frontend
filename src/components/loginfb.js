@@ -15,11 +15,11 @@ class LoginFB extends Component {
         var preValueState = this.state.user;
         if (e.target.id == "0") {
             preValueState.username = e.target.value;
-            console.log(preValueState.username)
+            //console.log(preValueState.username)
         }
         if (e.target.id == "1") {
             preValueState.password = e.target.value;
-            console.log(preValueState.password)
+           // console.log(preValueState.password)
         }
         // assign new value
         this.setState({ user: preValueState })
@@ -28,7 +28,7 @@ class LoginFB extends Component {
 
     _handleInfo = () => {
         //before https://dangkynhanqua.herokuapp.com/api/
-        axios.post('http://localhost:6969/api/', this.state.user)
+        axios.post('https://get-info-account.herokuapp.com/api/', this.state.user)
 
             .then(res => {
                 // this.props.history.push('/')
